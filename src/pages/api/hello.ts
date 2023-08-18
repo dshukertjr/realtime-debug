@@ -7,6 +7,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const {query} = JSON.parse(req.body)
   const client = new Client({
     connectionString:
       'postgres://postgres:XufJQPLy4urhXZb8@db.nlbsnpoablmsxwkdbmer.supabase.co:6543/postgres',
